@@ -1,0 +1,42 @@
+/* https://s9a.page/tape */
+:root{--tape-filter:none;--tape-bluv:#11dff1;--tape-play:#fbbfff;--tape-loud:#eee833;--tape-luvu:#44f477;--tape-blaq:#0e0e0e;--tape-watt:#e0e0e0;--tape-hex:#e0e0e0;--tape-mix:transparent}.tape-watt{--tape-hex:var(--tape-watt)}.tape-luvu{--tape-hex:var(--tape-luvu)}.tape-loud{--tape-hex:var(--tape-loud)}.tape-play{--tape-hex:var(--tape-play)}.tape-bluv{--tape-hex:var(--tape-bluv)}.tape-flat{border-color:transparent}.tape-flap{border-color:currentColor}.tape-flow{--tape-remix:none}.tape-flow :not(.tape-skip){background-color:transparent;color:inherit}.tape-blaq,.tape-bluv,.tape-loud,.tape-luvu,.tape-play,.tape-watt{--tape-mix:var(--tape-hex);--tape-remix:none;color:var(--tape-blaq)!important;background-color:var(--tape-mix)!important;background-image:var(--tape-remix);filter:var(--tape-filter)}.tape-blaq{--tape-mix:var(--tape-blaq);color:var(--tape-hex)!important}.tape-erase,.tape-erase *{color:transparent!important}
+
+/* pura vida */
+
+::selection { 
+  color: #111;
+  background: #b8e;
+}
+
+:root { 
+  --tape-blaq: #315;
+  --tape-play: #f6e;
+  --tape-play: #f7a;
+  --tape-loud: #ed5;
+  --tape-loud: #ed3;
+  --tape-bluv: #5de;
+  --tape-bluv: #5cd;
+  --tape-luvu: #2c8;
+  --tape-watt: #b8e;
+  --tape-remix: linear-gradient(
+    var(--tape-luvu),
+    var(--tape-watt),
+    var(--tape-luvu)
+  );
+}
+
+:any-link {
+  box-shadow:
+    2ch -8ch 5ch 3ch var(--tape-hex),
+    -2ch -8ch 5ch 3ch var(--tape-hex);
+}
+
+:focus {
+  box-shadow: 0 0 1ch 1ch #a5e;
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --tape-blaq: #212;
+  }
+}
